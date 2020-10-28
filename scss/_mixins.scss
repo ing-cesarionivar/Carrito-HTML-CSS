@@ -1,0 +1,45 @@
+/* Botones */
+@mixin boton($color) {
+    display: block;
+    background-color: $color;
+    padding: .8rem 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: $blanco;
+    text-decoration: none;
+}
+
+@mixin box-sizing($box-model) {
+    box-sizing: $box-model;
+}
+
+@mixin background-imagen($imagen) {
+    background-image: url($imagen);
+    background-repeat: no-repeat;
+    background-position: center center;
+    // background-size: cover;
+}
+
+@mixin gradiente($color1, $color2) {
+    background: linear-gradient(to right, $color1 0%, $color2 100%);
+}
+
+/* Media Queries */
+
+@mixin telefono {
+    @media only screen and (min-width: #{$telefono}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: #{$desktop}) {
+        @content;
+    }
+}

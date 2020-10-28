@@ -3,6 +3,7 @@
 /* Colores */
 /* Botones */
 /* Media Queries */
+/* Menus de navegacion */
 html {
   box-sizing: border-box;
 }
@@ -224,6 +225,23 @@ body {
   .footer .contenedor-footer {
     flex-direction: row;
   }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+@media only screen and (min-width: 1024px) {
+  .menu {
+    flex: 0 1 calc(30% - 1rem);
+  }
+}
+.menu a {
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=app.css.map */
